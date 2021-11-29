@@ -1,5 +1,3 @@
-video = document.getElementsByTagName("video")[0];
-
 function setSentiment() {
   interactionMenu =
     document.getElementById("menu-container").children[0].children[0]
@@ -43,8 +41,6 @@ function setSentiment() {
   });
 }
 
-video.addEventListener("loadeddata", function () {
-  if (video.readyState == 4) {
-    setSentiment();
-  }
-});
+window.onload = () => {
+  setSentiment();
+};
