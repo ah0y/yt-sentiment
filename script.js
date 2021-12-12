@@ -41,6 +41,6 @@ function setSentiment() {
   });
 }
 
-window.onload = () => {
+setInterval(() => {
   setSentiment();
-};
+}, 1000);
